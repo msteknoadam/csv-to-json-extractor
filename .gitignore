@@ -102,3 +102,12 @@ dist
 
 # TernJS port file
 .tern-port
+
+# Ignore input files
+*.csv
+
+# Ignore output files
+*.json
+
+# Do not ignore package.json as it's needed for package details
+!package.json
