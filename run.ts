@@ -11,8 +11,7 @@ const csvSeperator = process.env.SEPERATOR || ",";
 /** OPTIONAL: Optional parameter that determines whether the column should be parsed by JSON parser or not. */
 const shouldBeJSONParsed = JSON.parse(process.env.IS_JSON || "false");
 
-const usageText =
-	"Usage: npx cross-env CSV=<relative path to CSV file> COLUMN=<name of the column to extract> SEPERATOR=<optional: used CSV seperator, defaults to comma ','> npx ts-node ./run.ts";
+const usageText = "See README.md for usage instructions.";
 if (!csvRelativePath) {
 	throw Error(`CSV Relative path is not defined. ${usageText}`);
 }
